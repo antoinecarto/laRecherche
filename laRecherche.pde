@@ -7,7 +7,7 @@ void setup() {
 String[] lines = loadStrings("proust.txt");
 String laRecherche = join(lines, " ");
 words = split(laRecherche, " ");
-//frameRate(3);
+frameRate(3);
 }
 
 void draw() {
@@ -18,6 +18,8 @@ void draw() {
   textAlign(CENTER);
   text(words[index], width / 2, height / 2);
   index ++;
+  
+  //saveFrame("#######.png");
   }
   
   
